@@ -238,7 +238,7 @@ class _AudioCallScreenState extends State<AudioCallScreen> with TickerProviderSt
         msg.chatType = ChatType.ChatRoom;
 
         await _chatClient.chatManager.sendMessage(msg);
-        _isSVGAPlaying=true;
+
         print("✅ تم إرسال ملف SVGA عبر Agora!");
       } else {
         print("❌ فشل تحميل الملف.");
@@ -316,7 +316,7 @@ class _AudioCallScreenState extends State<AudioCallScreen> with TickerProviderSt
 
         if (mounted) {
           _svgaController.videoItem = videoItem;
-
+          _isSVGAPlaying = true;
           _svgaController.forward();
           // Stop animation after 10 seconds
           Future.delayed(Duration(seconds: (10).toInt()), () {
