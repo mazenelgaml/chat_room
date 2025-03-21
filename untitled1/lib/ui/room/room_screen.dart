@@ -500,6 +500,8 @@ class _AudioCallScreenState extends State<AudioCallScreen> with TickerProviderSt
                     _svgaController.stop();
                     _svgaController.dispose();
                     _chatClient.logout();
+                    _engine?.leaveChannel();
+                    _chatClient.chatRoomManager.leaveChatRoom(widget.chatroomId);
 
 
                     Get.to(() => RoomListScreen(

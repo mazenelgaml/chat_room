@@ -44,7 +44,7 @@ class LoginController extends GetxController {
         baseUrl: "http://a41.chat.agora.io",
         validateStatus: (status) => status != null && status < 500,
           headers: {
-            "Authorization":"Bearer 007eJxTYJjKsO6IschNI5cHzKo9jMd2/mupuyXb0CRlxvOQoYU34Z0Cg3lisnGyiXGqoblRsklqWlJiqrFxYkqKRXJyqkFyklHypbTb6Q2BjAwdX7czMjKwMjAyMDGA+AwMAE7VHmA="
+            "Authorization":"Bearer 007eJxTYPh3gPdnXaNDkVo9g01lyaHSf95z008d+jqv9XD0Ei2mDTsUGMwTk42TTYxTDc2Nkk1S05ISU42NE1NSLJKTUw2Sk4ySV+26k94QyMiweEMwMyMDKwMjAxMDiM/AAAAqbCD8"
           }
       ),
     );
